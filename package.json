@@ -1,0 +1,27 @@
+{
+  "name": "casl-surgard-spammer-node",
+  "version": "1.0.0",
+  "description": "Program for sending surgard messages via tcp",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*",
+    "start:compile": "tsc"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "surgard"
+  ],
+  "author": "Yurii Litovinskyi",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
